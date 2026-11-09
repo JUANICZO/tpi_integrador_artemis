@@ -1,5 +1,26 @@
-/* nemi
+#include "artemis.h"
 
+/* nemi - punto c */
+/* a_c = v^2 / r, usando los datos ya cargados en la estructura */
+double calcular_aceleracion_centripeta(const ParametrosOrbitales *orbita)
+{
+    return (orbita->velocidad * orbita->velocidad) / orbita->r_total;
+}
+
+void mostrar_aceleracion_centripeta(const ParametrosOrbitales *orbita)
+{
+    double ac = calcular_aceleracion_centripeta(orbita);
+
+    /* Verificacion: la gravedad es la fuerza centripeta, a_c = G*MT / r^2 */
+    double ac_gravedad = (G_CONST * M_TIERRA) / (orbita->r_total * orbita->r_total);
+
+    printf("\n=== ACELERACION CENTRIPETA ===\n");
+    printf("a_c = v^2 / r           = %.4f m/s^2\n", ac);
+    printf("Verificacion G*MT / r^2 = %.4f m/s^2\n", ac_gravedad);
+    printf("Equivale a %.3f g\n", ac / G_TIERRA);
+    printf("Los astronautas flotan porque estan en caida libre,\n");
+    printf("no porque no haya gravedad.\n");
+}
 
 
 */
