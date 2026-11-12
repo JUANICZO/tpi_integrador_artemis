@@ -1,4 +1,3 @@
-#include "artemis.h"
 
 /* nemi - punto c */
 /* a_c = v^2 / r, usando los datos ya cargados en la estructura */

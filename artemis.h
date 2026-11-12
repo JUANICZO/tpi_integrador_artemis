@@ -23,7 +23,7 @@ ParametrosOrbitales calcular_parametros_orbitales(double m_tierra, double r_tier
 void mostrar_resultados(const ParametrosOrbitales *orbita);
 
 /* nemi - punto c */
-void calcularAceleracionCentripeta(double altitud, double *ac);
-void mostrarAceleracionCentripeta(double altitud); 
+double calcular_aceleracion_centripeta(const ParametrosOrbitales *orbita);
+void mostrar_aceleracion_centripeta(const ParametrosOrbitales *orbita);
 
 #endif
