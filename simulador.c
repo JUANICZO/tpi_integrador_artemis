@@ -1,4 +1,4 @@
-/* nemi - punto c */
+/* nemi */
 double calcular_aceleracion_centripeta(const ParametrosOrbitales *orbita)
 {
     return (orbita->velocidad * orbita->velocidad) / orbita->r_total;
@@ -19,7 +19,6 @@ void mostrar_aceleracion_centripeta(const ParametrosOrbitales *orbita)
 }
 
 
-*/
 
 /* fran */
 double calcular_desviacion_lateral(double acel, double tiempo) {
@@ -47,16 +46,14 @@ void mostrar_desviacion_lateral(void) {
 
 
 /* tomi */
-void calcularPeriodoOrbital(double altitud, double *periodo){
+int calcularPeriodoOrbital(double altitud, double *periodo) {
     double r, v;
     if (periodo == NULL || altitud <= 0.0) {
         return 0;
     }
-    r = R_TIERRA + altitud;                  
-    v = sqrt(G_CONST * M_TIERRA / r);        
-        return 0;
-    }
-    *periodo = 2.0 * PI * r / v;            
+    r = R_TIERRA + altitud;
+    v = sqrt(G_CONST * M_TIERRA / r);
+    *periodo = 2.0 * PI * r / v;
     return 1;
 }
 void mostrarPeriodoOrbital(double altitud){

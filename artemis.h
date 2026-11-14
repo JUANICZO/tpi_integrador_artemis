@@ -22,6 +22,14 @@ void imprimir_demostracion_analitica(void);
 ParametrosOrbitales calcular_parametros_orbitales(double m_tierra, double r_tierra, double altitud, double g_grav);
 void mostrar_resultados(const ParametrosOrbitales *orbita);
 
+/* fran */
+double calcular_desviacion_lateral(double acel, double tiempo);
+void mostrar_desviacion_lateral(void);
+
+/* tomi */
+int calcularPeriodoOrbital(double altitud, double *periodo);
+void mostrarPeriodoOrbital(double altitud);
+
 /* nemi - punto c */
 double calcular_aceleracion_centripeta(const ParametrosOrbitales *orbita);
 void mostrar_aceleracion_centripeta(const ParametrosOrbitales *orbita);
