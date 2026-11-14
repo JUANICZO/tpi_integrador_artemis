@@ -1,6 +1,6 @@
 # Proyecto TPI en C
 
-En cumplimiento con los lineamientos de la cátedra, el equipo ha utilizado herramientas de Inteligencia Artificial Generativa (en este caso, **Gemini**) de manera ética y responsable como apoyo al desarrollo del proyecto de la Situación Problema 2 (Órbita LEO). A continuación se detallan las tareas, consultas y el proceso de validación:
+En cumplimiento con los lineamientos de la cátedra, el equipo ha utilizado herramientas de Inteligencia Artificial Generativa, de manera ética y responsable como apoyo al desarrollo del proyecto de la Situación Problema 2 (Órbita LEO). A continuación se detallan las tareas, consultas y el proceso de validación:
 
 ### 1. Herramienta Utilizada
 * **Nombre:** Gemini, chatGPT, Cloude Code
