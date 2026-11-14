@@ -1,6 +1,4 @@
-
 /* nemi - punto c */
-/* a_c = v^2 / r, usando los datos ya cargados en la estructura */
 double calcular_aceleracion_centripeta(const ParametrosOrbitales *orbita)
 {
     return (orbita->velocidad * orbita->velocidad) / orbita->r_total;
@@ -10,7 +8,6 @@ void mostrar_aceleracion_centripeta(const ParametrosOrbitales *orbita)
 {
     double ac = calcular_aceleracion_centripeta(orbita);
 
-    /* Verificacion: la gravedad es la fuerza centripeta, a_c = G*MT / r^2 */
     double ac_gravedad = (G_CONST * M_TIERRA) / (orbita->r_total * orbita->r_total);
 
     printf("\n=== ACELERACION CENTRIPETA ===\n");
@@ -24,7 +21,7 @@ void mostrar_aceleracion_centripeta(const ParametrosOrbitales *orbita)
 
 */
 
-/* fran
+/* fran */
 double calcular_desviacion_lateral(double acel, double tiempo) {
     double resultado = 0.0;
 
@@ -50,7 +47,6 @@ void mostrar_desviacion_lateral(void) {
 
 
 /* tomi */
-
 void calcularPeriodoOrbital(double altitud, double *periodo){
     double r, v;
     if (periodo == NULL || altitud <= 0.0) {
