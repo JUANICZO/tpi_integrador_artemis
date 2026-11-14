@@ -16,6 +16,8 @@ typedef struct {
     double aceleracion;
     double periodo;
 } ParametrosOrbitales;
+<<<<<<<<< Temporary merge branch 1
+=========
 
 /* juan cruz - punto a*/
 void imprimir_demostracion_analitica(void);
@@ -27,3 +29,4 @@ double calcular_aceleracion_centripeta(const ParametrosOrbitales *orbita);
 void mostrar_aceleracion_centripeta(const ParametrosOrbitales *orbita);
 
 #endif
+>>>>>>>>> Temporary merge branch 2
