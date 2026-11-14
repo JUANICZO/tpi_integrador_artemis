@@ -39,7 +39,7 @@ void mostrar_aceleracion_centripeta(const ParametrosOrbitales *orbita)
 /* juan cruz */
 #include <stdio.h>
 #include <math.h>
-#include "orion_orbit.h"
+#include "artemis.h"
 
 void imprimir_demostracion_analitica(void);
 ParametrosOrbitales calcular_parametros_orbitales(double m_tierra, double r_tierra, double altitud, double g_grav);
